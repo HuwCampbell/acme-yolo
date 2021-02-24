@@ -1,0 +1,36 @@
+name:                acme-yolo
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+-- license:
+cabal-version:       >=1.10
+
+license-file:        LICENSE
+author:              Huw Campbell
+maintainer:          huw.campbell@gmail.com
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+library
+  exposed-modules:
+                       Yolo
+
+
+  build-depends:       base                            >= 3          && < 5
+                     , data-default
+                     , exceptions                      >= 0.10
+                     , mtl
+                     , mmorph                          >= 1.0        && < 1.2
+                     , monad-control                   == 1.0.*
+                     , resourcet                       >= 1.1
+                     , transformers
+                     , these
+                     , pretty-show
+
+  hs-source-dirs:      src
+  default-language:    Haskell98
+
+
